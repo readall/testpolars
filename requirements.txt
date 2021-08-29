@@ -1,0 +1,9 @@
+#Essentails
+pandas
+polars
+matplotlib
+plotly
+requests
+tqdm
+gradio
+scikit-learn
