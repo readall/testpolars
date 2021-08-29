@@ -23,5 +23,10 @@ if __name__ == "__main__":
     
     edf = pl.read_csv(str(big_csv), has_headers=False)
     print(edf.filter(col("column_1") == 1).select(["column_9"]).head())
-    print(edf.describe())
-    # print(edf.info()) # method not found will error
+    # print(edf.describe())
+    # # print(edf.info()) # method not found will error
+    # df = pd.read_csv(big_csv)
+    # print(df.info())
+    print(edf.shape)
+    print(edf[1])
+    print(edf[1,3])    
