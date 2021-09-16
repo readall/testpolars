@@ -5,5 +5,6 @@ ports:
 tasks:
   - init: |
       pip3 install -U -r requirements.txt --user
-
+      apt-get install -y python3-tk ghostscript
+      pip install "camelot-py[cv]"
 
