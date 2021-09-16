@@ -1,3 +1,4 @@
 tasks:
-  - init: apt-get install -y python3-tk ghostscript
-  - init: pip3 install "camelot-py[cv]"
+  - init: 
+      apt-get install -y python3-tk ghostscript
+      pip install "camelot-py[cv]"
