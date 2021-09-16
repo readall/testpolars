@@ -3,9 +3,8 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init:
-    command : >
-      pip3 install -U -r requirements.txt --user &&
-      apt-get install -y python3-tk ghostscript &&
+  - init: |
+      pip3 install -U -r requirements.txt --user
+      apt-get install -y python3-tk ghostscript 
       pip3 install -U "camelot-py[cv]" --user 
 
